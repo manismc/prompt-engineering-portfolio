@@ -18,12 +18,6 @@ Financial Report Text:
 "{input_text}"
 ````
 
-## Purpose
-
-This instruction prompt precisely guides the model to extract multiple complex data points from unstructured financial text. It specifies the expected output format (JSON), handles missing data explicitly, and covers nuanced content such as forward-looking statements.
-
-It showcases your ability to write clear, comprehensive instructions for sophisticated natural language processing tasks.
-
 ## Example
 
 **Input:**
