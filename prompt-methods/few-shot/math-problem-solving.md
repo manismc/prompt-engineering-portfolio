@@ -1,4 +1,3 @@
-````markdown
 # Few-Shot Math Problem Solving Prompt — Complex Examples
 
 ## Prompt
