@@ -33,10 +33,6 @@ Q: {input_question}
 A:
 ````
 
-## Purpose
-
-This few-shot prompt provides clear, detailed examples covering algebra, geometry, and calculus. It trains the model to approach math problems methodically by breaking down each step logically and explaining the rationale, ensuring accuracy and interpretability.
-
 ## Example
 
 **Input:**
