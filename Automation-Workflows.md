@@ -58,7 +58,7 @@ Crafting prompts specifically tailored to the automation context is key. I optim
 2. Zapier webhook sends ticket content to AI API with prompt to classify urgency and topic  
 3. AI response triggers conditional routing:
    - High urgency → Notify support lead on Slack  
-   - Billing issue → Assign to Billing team in Zendesk  
+   - Billing issue → Assign to Billing team in ClickUp  
    - General query → Auto-respond with FAQ link  
 4. Ticket metadata updated automatically in CRM  
 
