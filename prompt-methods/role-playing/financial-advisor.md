@@ -51,12 +51,3 @@ Step 2: Allocate around 30% to bonds, including a mix of government and high-qua
 Step 3: The remaining 10% can be invested in alternative assets such as real estate investment trusts (REITs) or commodities for additional diversification.
 
 This allocation aligns with your goals of retirement savings and funding education by aiming for moderate growth with controlled risk. Keep in mind that regular portfolio reviews are important to adjust allocations as market conditions and your personal situation change.
-
-Would you like me to provide a sample portfolio breakdown or explore specific investment vehicles?
-
-## Notes
-
-* The prompt encourages the model to adopt a detailed advisory role with client-specific context.
-* Including client variables and explicit instructions improves response relevance and professionalism.
-* It demonstrates your ability to design prompts that produce helpful, responsible AI-driven conversations.
-* The structure allows for dynamic input, making it adaptable for various role-playing scenarios.
