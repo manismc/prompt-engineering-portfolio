@@ -46,10 +46,3 @@ This few-shot prompt provides clear, detailed examples covering algebra, geometr
 Step 1: Calculate the circumference using the formula $C = 2\pi r = 2 \times 3.14 \times 7 = 43.96$ cm.
 Step 2: Calculate the area using the formula $A = \pi r^2 = 3.14 \times 7^2 = 3.14 \times 49 = 153.86$ cm$^2$.
 Final answers: Circumference = 43.96 cm, Area = 153.86 cm$^2$.
-
-## Notes
-
-* Multiple examples illustrate a variety of math topics and solution strategies.
-* Stepwise explanations teach the model to provide transparent, easy-to-follow answers.
-* This format reduces mistakes in complex multi-step problems and improves response clarity.
-* Demonstrates your skill in guiding AI with well-structured few-shot prompts for rigorous math reasoning.
