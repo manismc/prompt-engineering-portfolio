@@ -45,7 +45,9 @@ Advisor response:
 Thank you for sharing your financial details. Considering your medium risk tolerance and a 15-year investment horizon, I recommend a balanced portfolio allocation to balance growth and stability.
 
 Step 1: Allocate approximately 60% to diversified stocks, focusing on large-cap and dividend-paying companies to provide growth potential and income.
+
 Step 2: Allocate around 30% to bonds, including a mix of government and high-quality corporate bonds to reduce volatility.
+
 Step 3: The remaining 10% can be invested in alternative assets such as real estate investment trusts (REITs) or commodities for additional diversification.
 
 This allocation aligns with your goals of retirement savings and funding education by aiming for moderate growth with controlled risk. Keep in mind that regular portfolio reviews are important to adjust allocations as market conditions and your personal situation change.
