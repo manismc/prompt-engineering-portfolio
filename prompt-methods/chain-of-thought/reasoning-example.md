@@ -56,10 +56,3 @@ $$
 6. **Recommendation:** Unless there are other qualitative factors or growth expectations not captured here, an investor should be cautious and might consider not buying at the current price.
 
 **Final answer:** The intrinsic value is \$130. The stock is currently overvalued at \$150, so it is not recommended to buy at this price.
-
-## Notes
-
-* This prompt ensures the model explicitly applies financial formulas, shows intermediate calculations, and draws logical conclusions.
-* Asking for assumptions and financial principles helps avoid black-box answers and makes the output auditable.
-* The detailed reasoning supports both accuracy and transparency, critical in financial decision-making.
-* This approach can be adapted for valuation, risk analysis, portfolio optimization, and other complex financial tasks.
