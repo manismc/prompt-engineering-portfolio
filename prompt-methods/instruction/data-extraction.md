@@ -44,10 +44,3 @@ Acme Corp announced its Q2 2025 earnings on July 15, 2025. The company reported 
   "Forward-Looking Statements": "Management expressed confidence in reaching a 10% growth target for the next fiscal year despite economic uncertainties."
 }
 ```
-
-## Notes
-
-* The prompt includes detailed instructions and output formatting requirements, reducing ambiguity.
-* Explicitly asking for null values where data is missing improves robustness.
-* This example highlights your expertise in crafting instructions for extracting structured data from complex documents.
-* It can be adapted for other domains like legal texts, medical reports, or technical manuals.
