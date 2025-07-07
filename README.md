@@ -1,43 +1,41 @@
-# 🚀 Prompt Engineering Portfolio
+# Prompt Engineering Portfolio
 
-Welcome to my **Prompt Engineering Portfolio** — a curated showcase of advanced prompt designs, techniques developed to unlock the full potential of large language models (LLMs).
-
----
-
-## 📂 Repository Structure
-
-- [`Prompt Methods`](prompts/README.md)  
-  Explore categorized prompt techniques such as zero-shot, few-shot, chain-of-thought, role prompting, and more — all backed with practical examples and explanations.
-
-- [`Tools Used`](tools/README.md)  
-  A breakdown of the platforms, libraries, and frameworks used in designing, testing, and optimizing prompts (e.g. LangChain, OpenAI API, PromptLayer, etc.).
-
-- [`Responsible AI`](responsible-ai/README.md)  
-  My approach to ethical AI usage: mitigating bias, ensuring safety, respecting user intent, and aligning with responsible AI development principles.
-
-- [`Examples & Use Cases`](examples/README.md)  
-  Real-world applications of prompt engineering across domains like content generation, education, code assistance, data analysis, and user experience design.
+Welcome to my **Prompt Engineering Portfolio** — a curated collection of prompt design examples, automation workflows, and testing frameworks showcasing practical applications of large language models (LLMs) like GPT-4 and others.
 
 ---
 
-## 👩‍💻 About Me
+## Repository Contents
 
-I'm a prompt engineer passionate about building **human-aligned AI systems** through precision-crafted prompts. My focus is on:
+This repository contains:
 
-- 🧠 Designing context-aware, modular prompt systems  
-- ⚖️ Promoting fairness and safety in language model outputs  
-- 🔬 Experimenting with prompt tuning and evaluation  
-- 🤝 Collaborating across disciplines to solve real-world problems with LLMs
-
-If you’re building with AI and care about output quality, alignment, or creativity — let’s connect!
+* **Prompt Methods:** Examples of prompt designs using few-shot prompting, chain-of-thought, instruction tuning, and RAG integration.
+* **Automation Workflows:** Demonstrations of how prompts can be embedded into automation pipelines using tools like Zapier and Make to streamline AI-powered tasks.
+* **A/B Testing Examples:** Frameworks and scripts used to evaluate and compare prompt variants to optimize performance and reduce hallucinations.
+* **Documentation & SOPs:** Guidelines and best practices for prompt versioning, evaluation metrics, and workflow management.
 
 ---
 
-## 💬 Let’s Collaborate
+## Highlights
 
-Open to collaborations, contract work, or brainstorming on anything AI-related. Feel free to open an issue, fork a prompt, or just [reach out](mailto:manicharansangani1@gmail.com)!
+* Over 200 optimized prompts tailored for chatbots, agentic AI workflows, and customer interaction systems.
+* Integration with automation platforms to reduce manual work and improve AI response quality.
+* Data-driven A/B testing methodologies for prompt evaluation.
+* Practical use of retrieval-based prompting to enhance information retrieval within conversations.
 
 ---
 
-> *Last updated: 2025-07-07*  
-> Designed for clarity, curiosity, and creativity ✨
+## Technologies & Tools
+
+* Large Language Models: GPT-4, Claude, Gemini, Play.ai and Synthflow
+* Automation Platforms: Zapier, Make (Integromat), GoHighLevel
+* Vector Databases & RAG Systems for context augmentation
+* Workflow Management: ClickUp SOPs and prompt update processes
+
+---
+
+## Getting Started
+
+1. Browse the prompt files in the repository to see examples of prompt structures and use cases.
+2. Review the automation workflow scripts for ideas on integrating prompts with task automation tools.
+3. Explore the A/B testing resources to understand how to measure and improve prompt effectiveness.
+4. Adapt the provided examples to your own projects to build robust LLM-powered applications.
