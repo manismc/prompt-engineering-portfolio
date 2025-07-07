@@ -23,10 +23,6 @@ Client question: "{client_question}"
 Advisor response:
 ````
 
-## Purpose
-
-This role-playing prompt expertly guides the model to simulate a real-world professional interaction, demonstrating your ability to elicit nuanced, context-aware, and responsible AI behavior. It shows depth in instruction and the skill to direct AI as a domain expert providing thoughtful, personalized advice.
-
 ## Example
 
 **Input:**
