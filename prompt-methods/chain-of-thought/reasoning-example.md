@@ -10,12 +10,6 @@ Question: {input_question}
 Please provide a detailed, step-by-step breakdown of your reasoning process, including all necessary calculations, assumptions, and financial principles applied. Conclude with a clear final recommendation or result.
 ````
 
-## Purpose
-
-This prompt is designed to elicit complex, structured reasoning in financial contexts where thorough analysis is essential. By requesting explicit, multi-step explanation of calculations, assumptions, and underlying principles, it ensures that the AI’s output is transparent, accurate, and professional.
-
-It highlights the prompt engineer’s ability to craft instructions that guide the model through intricate problem-solving in a high-stakes domain.
-
 ## Example
 
 **Input:**
