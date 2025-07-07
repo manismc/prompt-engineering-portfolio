@@ -1,17 +1,20 @@
-# AI Projects & Prompt Engineering Portfolio 🧠⚙️
+# Prompt Engineering Portfolio
 
-Welcome to my collection of curated work in the fields of AI prompt engineering and LLM application pipelines.
+Welcome to my **Prompt Engineering Portfolio**! This repository showcases a diverse collection of prompts that I’ve crafted, demonstrating my skills across various prompt engineering techniques.
 
-## 🔹 Prompt Engineering
-Explore hand-crafted prompts with detailed context, use-cases, and output samples.
-- Resume Screening Prompt
-- Zero-shot Classification Prompt
-- Conversational Memory Prompt
+## Contents
 
-## 🔹 AI Pipelines
-Real-world applications built using LangChain, GPT-4, FAISS, and more.
-- 📄 PDF Summarizer with GPT-4 + LangChain
-- 🧠 RAG Pipeline with Custom Vector Store
-- 💬 Chatbot for FAQs with Memory
+- [Prompt Methods](prompts/README.md) — Organized prompt examples by method  
+- [Tools Used](tools/README.md) — Tools and frameworks for prompt development  
+- [Responsible AI](responsible-ai/README.md) — Ethical considerations in prompt engineering  
+- [Examples & Use Cases](examples/README.md) — Real-world applications of prompts  
 
-> 🎯 All projects are open-source and documented. Demos coming soon via Hugging Face Spaces.
+## About Me
+
+I specialize in crafting effective and responsible AI prompts, enabling language models to generate accurate, safe, and useful outputs.
+
+Feel free to explore the prompts and reach out if you want to collaborate!
+
+---
+
+*Last updated: 2025-07-07*
