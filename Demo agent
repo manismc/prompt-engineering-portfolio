@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ringg Web Call Assistant — Test</title>
+  <style>
+    body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px}
+    .card{max-width:860px;width:100%;border:1px solid #e6e6e6;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+    pre{background:#f7f7f8;padding:12px;border-radius:6px;overflow:auto}
+    .note{font-size:13px;color:#444}
+    .actions{display:flex;gap:8px;margin-top:6px}
+    button{padding:8px 12px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer}
+  </style>
+</head>
+<body>
+  <h1>Ringg Web Call Assistant — Test</h1>
+
+  <div class="card">
+    <p class="note"><strong>Quick notes:</strong> This file is prepared for local testing on <code>http://localhost</code>. Browsers allow camera/microphone on <code>localhost</code> without HTTPS. If you want a public HTTPS URL, use GitHub Pages or ngrok (instructions below).</p>
+
+    <p class="note">Replace <code>YOUR_AGENT_ID</code> and <code>YOUR_X_API_KEY</code> below with values from your Ringg dashboard before deploying.</p>
+
+    <div class="actions">
+      <button onclick="copyCode()">Copy embed snippet</button>
+      <button onclick="downloadFile()">Download .html</button>
+    </div>
+
+    <h3>Embed snippet (for reference)</h3>
+    <pre id="snippet">&lt;script&gt;
+ function loadAgentsCdn(e, t) {
+   let n = document.createElement("link");
+   n.rel = "stylesheet"; n.type = "text/css";
+   n.href = `https://cdn.jsdelivr.net/npm/@desivocal/agents-cdn@${e}/dist/style.css`;
+   var a = document.createElement("script");
+   a.type = "text/javascript";
+   a.readyState ? a.onreadystatechange = function() {
+     if (a.readyState === 'loaded' || a.readyState === 'complete') { a.onreadystatechange = null; t(); }
+   } : a.onload = function() { t(); };
+   a.src = `https://cdn.jsdelivr.net/npm/@desivocal/agents-cdn@${e}/dist/dv-agent.es.js`;
+   document.getElementsByTagName('head')[0].appendChild(n);
+   document.getElementsByTagName('head')[0].appendChild(a);
+ }
+ loadAgentsCdn("latest", function(){
+   loadAgent({
+     agentId: "YOUR_AGENT_ID",
+     xApiKey: "YOUR_X_API_KEY",
+     variables: {},
+     buttons: {}
+   });
+ });
+&lt;/script&gt;</pre>
+  </div>
+
+  <div class="card">
+    <h3>Standalone local HTML (this file)</h3>
+    <p class="note">This page will attempt to load the Ringg embed and show a visible error if the embed fails (for example, blocked by a server-side whitelist).</p>
+
+    <h4>How to run</h4>
+    <ol>
+      <li>Save this file as <code>index.html</code> in a folder.</li>
+      <li>Run a local server (recommended): <code>python -m http.server 8000</code> then open <code>http://localhost:8000</code>.</li>
+      <li>If you deploy to GitHub Pages or any public host, ensure that host is added to your Ringg assistant's Whitelist Domains.</li>
+    </ol>
+  </div>
+
+  <script>
+    // embed loader
+    function loadAgentsCdn(e, t) {
+      let n = document.createElement('link');
+      n.rel = 'stylesheet'; n.type = 'text/css';
+      n.href = `https://cdn.jsdelivr.net/npm/@desivocal/agents-cdn@${e}/dist/style.css`;
+      var a = document.createElement('script');
+      a.type = 'text/javascript';
+      if (a.readyState) {
+        a.onreadystatechange = function () {
+          if (a.readyState === 'loaded' || a.readyState === 'complete') {
+            a.onreadystatechange = null; t();
+          }
+        };
+      } else {
+        a.onload = function () { t(); };
+      }
+      a.src = `https://cdn.jsdelivr.net/npm/@desivocal/agents-cdn@${e}/dist/dv-agent.es.js`;
+      document.getElementsByTagName('head')[0].appendChild(n);
+      document.getElementsByTagName('head')[0].appendChild(a);
+    }
+
+    // Replace these with your real values before deploying
+    const CONFIG = {
+      agentId: "YOUR_AGENT_ID",
+      xApiKey: "YOUR_X_API_KEY",
+      version: "latest"
+    };
+
+    function startAgent() {
+      if (!CONFIG.agentId || !CONFIG.xApiKey || CONFIG.agentId.includes("YOUR_")) {
+        console.warn("Please set your agentId and xApiKey in the CONFIG object.");
+        return;
+      }
+      loadAgentsCdn(CONFIG.version, function () {
+        try {
+          loadAgent({
+            agentId: CONFIG.agentId,
+            xApiKey: CONFIG.xApiKey,
+            variables: { callee_name: "Local Tester" },
+            buttons: { modalTrigger: { styles: { borderRadius: "50%" } } }
+          });
+          console.log("loadAgent called");
+        } catch (err) {
+          console.error("loadAgent error:", err);
+          showError(err && err.message ? err.message : "Unknown error initializing agent.");
+        }
+      });
+    }
+
+    function showError(msg) {
+      const el = document.createElement("div");
+      el.style.marginTop = "16px";
+      el.style.padding = "12px";
+      el.style.border = "1px solid #f2c0c0";
+      el.style.background = "#fff4f4";
+      el.style.borderRadius = "8px";
+      el.textContent = "Agent failed to initialize: " + msg;
+      document.body.appendChild(el);
+    }
+
+    function copyCode() {
+      const text = document.getElementById("snippet").innerText;
+      navigator.clipboard.writeText(text).then(()=>alert("Copied embed snippet to clipboard"));
+    }
+    function downloadFile() {
+      const blob = new Blob([document.documentElement.outerHTML], {type: 'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'ringg_local_test.html';
+      document.body.appendChild(a); a.click(); a.remove();
+      URL.revokeObjectURL(url);
+    }
+
+    window.addEventListener('load', startAgent);
+  </script>
+</body>
+</html>
